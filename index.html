@@ -7,6 +7,45 @@
     <title>Cowork</title>
 </head>
 <body>
+    <div id="root">
+            <header>
+                <a href=""><img src="./asesst/svg/Logo.svg" alt="">
+                </a>
+                <ul>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="#">Blog</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact </a>
+                    </li>
+                </ul>
+                <button class="burger-button"> Log in 
+                </button>
+                <div class="nav">
+                    <input type="checkbox" id="check">
+                    <label for="check" class="check-btn">
+                        <i data-lucide="menu"></i>
+                    </label>
+                    <label class="modal" for="check" id="check">
+                        <a href="#">
+                            About
+                        </a>
+                        <a href="#">Projects</a>
+                        <a href="#">Contact</a>
+                    </label>
+                </div>
+            </header>
+    </div>
     
 </body>
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+    lucide.createIcons();
+</script>
 </html>

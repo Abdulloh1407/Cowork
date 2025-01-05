@@ -12,6 +12,73 @@ body{
 }
 #root{
     max-width: 1440px;
-    width: 100%;
-    
+    width: 100%; 
+    padding: 16px;  
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+
+    ul {
+        display: none;
+    }
+
+    .burger-button {
+        display: none;
+        color: #fff;
+        background-color: #000000;
+        border-radius: 4px;
+        font-size: 20px;
+        padding: 16px 20px;
+    }
+
+    .burger-button {
+        display: none;
+        border: none;
+    }
+
+    .nav {
+        .modal {
+            display: none;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            right: -100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            background-color: #32313175;
+            transition: all 0.3s ease;
+
+            a {
+                color: #fff;
+                font-size: 25px;
+                padding: 18px 30px;
+                border: 0.5px solid #fff;
+                border-radius: 10px;
+
+                &:hover {
+                    background-color: #fff;
+                    color: #000000;
+                    border-radius: 10px;
+                }
+            }
+
+        }
+
+        input {
+            display: none;
+        }
+
+        input:checked~.modal {
+            right: 0;
+        }
+    }
+
 }
