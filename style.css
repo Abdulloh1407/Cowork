@@ -13,72 +13,81 @@ body{
 #root{
     max-width: 1440px;
     width: 100%; 
-    padding: 16px;  
+    padding:2px 16px;  
 }
-header {
+header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: sticky;
-    top: 0;
-    background-color: #fff;
-
-    ul {
-        display: none;
-    }
-
-    .burger-button {
-        display: none;
-        color: #fff;
-        background-color: #000000;
-        border-radius: 4px;
-        font-size: 20px;
-        padding: 16px 20px;
-    }
-
-    .burger-button {
-        display: none;
-        border: none;
-    }
-
-    .nav {
-        .modal {
-            display: none;
-            width: 100%;
-            height: 100%;
-            position: fixed;
-            top: 0;
-            right: -100%;
+    gap: 24px;
+    padding: 16px;
+    padding-left: 2px;
+    padding-right: 2px;
+    border-top: 2px solid;
+    border-bottom: 2px solid;
+    &>div{
+        display: flex;
+        align-items: center;
+        gap: 32px;
+        &>ul{
             display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 40px;
-            background-color: #32313175;
-            transition: all 0.3s ease;
-
-            a {
-                color: #fff;
-                font-size: 25px;
-                padding: 18px 30px;
-                border: 0.5px solid #fff;
-                border-radius: 10px;
-
-                &:hover {
-                    background-color: #fff;
-                    color: #000000;
-                    border-radius: 10px;
-                }
+            gap: 48px;
+            a{
+                color: black;
             }
-
         }
-
-        input {
-            display: none;
+        button{
+           background-color: white;
+           border: 1px solid;
+           border-radius: 50px;
+           color: black;
+           padding: 12px 24px;
         }
-
-        input:checked~.modal {
-            right: 0;
+        .btn{
+            color: #fff;
+            background-color: #3139FB;
         }
     }
-
+        
+}
+section.text_container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    div{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        border-bottom: 1px solid;
+        span{
+            color: #fff;
+            background-color: #3139FB;
+            border-radius: 10px;
+            padding: 0px 12px 0px 12px;
+             }
+        h1{
+            font-size: 96px;
+            font-weight: 700;
+            line-height: 96px;
+        }
+}
+.about_website{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .about_website_text{
+        padding: 32px;
+        display: flex;
+        align-items: center;
+        background-color: #FFFADD;
+        border-radius: 32px;
+        p{
+            text-align: left;
+            font-size: 24px;
+        }
+    }
+    
+}
 }
